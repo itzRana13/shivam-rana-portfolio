@@ -13,7 +13,7 @@ const SEOHead = ({
     description = "Portfolio of Shivam Rana, a MERN Stack Developer with 2+ years of experience in MongoDB, Express, React, and Node.js",
     keywords = "MERN Stack, React, Node.js, MongoDB, Express, Full Stack Developer, Web Developer, JavaScript, TypeScript",
     image = "/favicon.svg",
-    url = "https://shivam-rana-portfolio.vercel.app"
+    url = "https://shivam-rana-portfolio-itzrana13s-projects.vercel.app"
 }: SEOHeadProps) => {
     return (
         <Helmet>

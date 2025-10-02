@@ -183,7 +183,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - 📧 Email: [shivamrana342@gmail.com](mailto:shivamrana342@gmail.com)
 - 💼 LinkedIn: [shivam-rana-itzrana13](https://linkedin.com/in/shivam-rana-itzrana13)
 - 🐙 GitHub: [itzRana13](https://github.com/itzRana13)
-- 🌐 Portfolio: [Live Demo](https://shivam-rana-portfolio.vercel.app)
+- 🌐 Portfolio: [Live Demo](https://shivam-rana-portfolio-itzrana13s-projects.vercel.app)
 
 ## 🙏 Acknowledgments
 
