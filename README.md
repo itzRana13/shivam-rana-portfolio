@@ -1,4 +1,4 @@
-# 🚀 Shivam Rana - MERN Stack Developer Portfolio
+# 🚀 Shivam Rana - Portfolio
 
 A modern, responsive portfolio website showcasing my skills and projects as a MERN Stack Developer. Built with cutting-edge technologies and featuring stunning 3D animations and dynamic gradients.
 
@@ -53,8 +53,8 @@ A modern, responsive portfolio website showcasing my skills and projects as a ME
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/itzRana13/shivam-mern-showcase.git
-   cd shivam-mern-showcase
+   git clone https://github.com/itzRana13/shivam-rana-portfolio.git
+   cd shivam-rana-portfolio
    ```
 
 2. **Install dependencies**
@@ -83,7 +83,7 @@ The built files will be in the `dist` directory.
 ## 📁 Project Structure
 
 ```
-shivam-mern-showcase/
+shivam-rana-portfolio/
 ├── public/
 │   ├── favicon.svg          # Custom SVG favicon
 │   ├── favicon.ico          # Fallback favicon
@@ -183,7 +183,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - 📧 Email: [shivamrana342@gmail.com](mailto:shivamrana342@gmail.com)
 - 💼 LinkedIn: [shivam-rana-itzrana13](https://linkedin.com/in/shivam-rana-itzrana13)
 - 🐙 GitHub: [itzRana13](https://github.com/itzRana13)
-- 🌐 Portfolio: [Live Demo](https://shivam-mern-showcase.vercel.app)
+- 🌐 Portfolio: [Live Demo](https://shivam-rana-portfolio.vercel.app)
 
 ## 🙏 Acknowledgments
 
