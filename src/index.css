@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 40% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 40% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 189 94% 58%;
+    --primary-foreground: 222 47% 4%;
+
+    --secondary: 222 35% 12%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 222 35% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 282 85% 65%;
+    --accent-foreground: 222 47% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 35% 15%;
+    --input: 222 35% 15%;
+    --ring: 189 94% 58%;
+
+    --radius: 0.75rem;
+
+    /* Enhanced design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(189 94% 58%) 0%, hsl(282 85% 65%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(282 85% 65%) 0%, hsl(189 94% 58%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(222 47% 4%) 0%, hsl(222 40% 8%) 100%);
+    --shadow-glow: 0 0 40px hsl(189 94% 58% / 0.4);
+    --shadow-glow-lg: 0 0 60px hsl(189 94% 58% / 0.5);
+    --shadow-accent: 0 0 40px hsl(282 85% 65% / 0.4);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-15px) translateX(10px); }
+  50% { transform: translateY(-25px) translateX(-5px); }
+  75% { transform: translateY(-15px) translateX(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50% { box-shadow: 0 0 50px hsl(var(--primary) / 0.7); }
+}
+
+@keyframes glow-pulse-accent {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--accent) / 0.3); }
+  50% { box-shadow: 0 0 50px hsl(var(--accent) / 0.7); }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.animate-glow-pulse-accent {
+  animation: glow-pulse-accent 2s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out;
+}
+
+.animate-scale-pulse {
+  animation: scale-pulse 3s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 20s linear infinite;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
