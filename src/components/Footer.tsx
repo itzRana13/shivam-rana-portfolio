@@ -13,33 +13,36 @@ const Footer = () => {
               MERN Stack Developer
             </p>
           </div>
-          
+
           <div className="flex gap-4">
-            <a 
-              href="https://github.com" 
-              target="_blank" 
+            <a
+              href="https://github.com/itzRana13"
+              target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow"
+              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow hover:scale-110"
+              aria-label="GitHub Profile"
             >
               <Github className="h-5 w-5" />
             </a>
-            <a 
-              href="https://linkedin.com" 
-              target="_blank" 
+            <a
+              href="https://linkedin.com/in/shivam-rana-itzrana13"
+              target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow"
+              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow hover:scale-110"
+              aria-label="LinkedIn Profile"
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a 
-              href="mailto:your.email@example.com"
-              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow"
+            <a
+              href="mailto:shivamrana342@gmail.com"
+              className="p-2 rounded-full bg-secondary hover:bg-accent transition-all hover:shadow-glow hover:scale-110"
+              aria-label="Send Email"
             >
               <Mail className="h-5 w-5" />
             </a>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-border text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Shivam Rana. All rights reserved.</p>
         </div>

@@ -1,73 +1,197 @@
-# Welcome to your Lovable project
+# 🚀 Shivam Rana - MERN Stack Developer Portfolio
 
-## Project info
+A modern, responsive portfolio website showcasing my skills and projects as a MERN Stack Developer. Built with cutting-edge technologies and featuring stunning 3D animations and dynamic gradients.
 
-**URL**: https://lovable.dev/projects/ad7f8fdb-4dab-4de7-b32e-f68f6a08a1ba
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen)
+![React](https://img.shields.io/badge/React-18.0-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC)
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **🎨 Modern Design**: Clean, professional interface with dark theme
+- **🌊 3D Animations**: Advanced CSS 3D transforms and perspective effects
+- **🌈 Dynamic Gradients**: Morphing gradient backgrounds and color transitions
+- **📱 Responsive**: Fully responsive design for all devices
+- **⚡ Performance**: Optimized with Vite and modern build tools
+- **🎯 Interactive**: Smooth scrolling, hover effects, and micro-interactions
+- **🔍 SEO Optimized**: Meta tags, Open Graph, and Twitter Card support
 
-**Use Lovable**
+## 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ad7f8fdb-4dab-4de7-b32e-f68f6a08a1ba) and start prompting.
+### Frontend
 
-Changes made via Lovable will be committed automatically to this repo.
+- **React 18** - Modern React with hooks and functional components
+- **TypeScript** - Type-safe JavaScript development
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible UI components
+- **Lucide React** - Modern icon library
 
-**Use your preferred IDE**
+### Styling & Animation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **CSS 3D Transforms** - Perspective, rotateX, rotateY, rotateZ
+- **CSS Animations** - Keyframes, transitions, and transforms
+- **GPU Acceleration** - Hardware-accelerated animations
+- **Dynamic Gradients** - Morphing color transitions
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Development Tools
 
-Follow these steps:
+- **ESLint** - Code linting and formatting
+- **PostCSS** - CSS processing
+- **Git** - Version control
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🚀 Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js (v16 or higher)
+- npm or yarn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/itzRana13/shivam-mern-showcase.git
+   cd shivam-mern-showcase
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the portfolio.
+
+### Build for Production
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist` directory.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📁 Project Structure
 
-**Use GitHub Codespaces**
+```
+shivam-mern-showcase/
+├── public/
+│   ├── favicon.svg          # Custom SVG favicon
+│   ├── favicon.ico          # Fallback favicon
+│   └── robots.txt           # SEO robots file
+├── src/
+│   ├── components/          # React components
+│   │   ├── ui/             # shadcn/ui components
+│   │   ├── Hero.tsx        # Hero section with 3D effects
+│   │   ├── About.tsx       # About section
+│   │   ├── Skills.tsx      # Skills showcase
+│   │   ├── Projects.tsx    # Projects gallery
+│   │   ├── Experience.tsx  # Work experience
+│   │   ├── Contact.tsx     # Contact form
+│   │   └── Footer.tsx      # Footer component
+│   ├── assets/             # Images and static assets
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Utility functions
+│   ├── pages/              # Page components
+│   ├── App.tsx             # Main App component
+│   ├── main.tsx            # Application entry point
+│   ├── index.css           # Global styles and animations
+│   └── App.css             # App-specific styles
+├── index.html              # HTML template
+├── package.json            # Dependencies and scripts
+├── tailwind.config.ts      # Tailwind configuration
+├── tsconfig.json           # TypeScript configuration
+└── vite.config.ts          # Vite configuration
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Key Components
 
-## What technologies are used for this project?
+### Hero Section
 
-This project is built with:
+- 3D floating background with perspective
+- Morphing gradient overlays
+- Animated particles and orbs
+- Interactive buttons with 3D hover effects
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Skills Section
 
-## How can I deploy this project?
+- Animated skill bars
+- Technology icons with hover effects
+- Responsive grid layout
 
-Simply open [Lovable](https://lovable.dev/projects/ad7f8fdb-4dab-4de7-b32e-f68f6a08a1ba) and click on Share -> Publish.
+### Projects Section
 
-## Can I connect a custom domain to my Lovable project?
+- Project cards with 3D transforms
+- Image overlays and hover animations
+- Live demo and GitHub links
 
-Yes, you can!
+### Contact Section
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Interactive contact form
+- Social media links with animations
+- Email integration
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🌐 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy with zero configuration
+
+### Netlify
+
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder to Netlify
+
+### Other Platforms
+
+The project can be deployed to any static hosting service that supports SPA routing.
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature-name`
+5. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+**Shivam Rana**
+
+- 📧 Email: [shivamrana342@gmail.com](mailto:shivamrana342@gmail.com)
+- 💼 LinkedIn: [shivam-rana-itzrana13](https://linkedin.com/in/shivam-rana-itzrana13)
+- 🐙 GitHub: [itzRana13](https://github.com/itzRana13)
+- 🌐 Portfolio: [Live Demo](https://shivam-mern-showcase.vercel.app)
+
+## 🙏 Acknowledgments
+
+- [shadcn/ui](https://ui.shadcn.com/) for beautiful UI components
+- [Lucide](https://lucide.dev/) for amazing icons
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- [Vite](https://vitejs.dev/) for fast development experience
+
+---
+
+⭐ **Star this repository if you found it helpful!**

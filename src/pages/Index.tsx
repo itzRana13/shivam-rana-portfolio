@@ -5,18 +5,22 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-background">
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <SEOHead />
+      <main className="min-h-screen bg-background">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 
