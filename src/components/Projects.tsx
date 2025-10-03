@@ -2,43 +2,43 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import ecommerceImg from "@/assets/projects/ecommerce.jpg";
-import chatAppImg from "@/assets/projects/chat-app.jpg";
-import taskManagerImg from "@/assets/projects/task-manager.jpg";
-import blogPlatformImg from "@/assets/projects/blog-platform.jpg";
+import defendiaImg from "@/assets/projects/defendia.jpg";
+import zoomVideoImg from "@/assets/projects/zoom-video.jpg";
+import chatRealtimeImg from "@/assets/projects/chat-realtime.jpg";
+import groceryStoreImg from "@/assets/projects/ecommerce.jpg";
 
 const projects = [
   {
     title: "Defendia Password Manager",
     description: "Secure vault for credentials, passkeys, and credit cards with biometric login, masquerade emails, cross-platform sync, and real-time data breach monitoring ensuring GDPR compliance.",
     tech: ["MERN", "Electron", "Chrome Extension", "AES Encryption", "Biometric Auth"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: ecommerceImg
+    github: "https://github.com/itzRana13",
+    demo: "https://defendia.com/",
+    image: defendiaImg
+  },
+  {
+    title: "Zoom-like Video Conferencing",
+    description: "Real-time video conferencing platform with WebRTC technology, Socket.io for instant communication, screen sharing, and multi-participant support.",
+    tech: ["Next.js", "WebRTC", "Socket.io", "Tailwind CSS"],
+    github: "https://github.com/itzRana13",
+    demo: "https://zoom-sooty.vercel.app/",
+    image: zoomVideoImg
+  },
+  {
+    title: "Baat Cheet - Real-time Chat",
+    description: "Real-time chat application with instant messaging, online status indicators, and seamless communication powered by Socket.io and MongoDB.",
+    tech: ["React.js", "Node.js", "Socket.io", "MongoDB", "Express.js"],
+    github: "https://github.com/itzRana13",
+    demo: "https://chatapp-1-xdy1.onrender.com/",
+    image: chatRealtimeImg
   },
   {
     title: "Grocery Store Website",
     description: "E-commerce platform with authentication, shopping cart, CRUD operations, and Redux state management for seamless user experience.",
     tech: ["React.js", "Django", "SQL", "Redux"],
-    github: "https://github.com/shivam-rana",
+    github: "https://github.com/itzRana13",
     demo: "#",
-    image: chatAppImg
-  },
-  {
-    title: "Bike-Buddy Platform",
-    description: "Real-time bike rental platform with secure payment gateway integration, responsive UI, and seamless booking experience.",
-    tech: ["React.js", "Django", "JavaScript", "Payment Gateway"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: taskManagerImg
-  },
-  {
-    title: "Full Stack Web Applications",
-    description: "Built multiple responsive web applications with modern frameworks, secure authentication, and optimized performance.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: blogPlatformImg
+    image: groceryStoreImg
   }
 ];
 
