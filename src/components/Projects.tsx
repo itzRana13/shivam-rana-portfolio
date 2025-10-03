@@ -22,7 +22,7 @@ const projects = [
     description: "Real-time video conferencing platform with WebRTC technology, Socket.io for instant communication, screen sharing, and multi-participant support.",
     tech: ["Next.js", "WebRTC", "Socket.io", "Tailwind CSS"],
     github: "https://github.com/itzRana13/zoom",
-    demo: "https://zoom-sooty.vercel.app/",
+    demo: "https://zoom-kappa-ten.vercel.app/",
     image: zoomVideoImg
   },
   {
