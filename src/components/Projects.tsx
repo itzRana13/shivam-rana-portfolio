@@ -6,6 +6,7 @@ import defendiaImg from "@/assets/projects/defendia.jpg";
 import zoomVideoImg from "@/assets/projects/zoom-video.jpg";
 import chatRealtimeImg from "@/assets/projects/chat-realtime.jpg";
 import groceryStoreImg from "@/assets/projects/ecommerce.jpg";
+import zutubeImg from "@/assets/projects/zutube.jpg";
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
     title: "Zoom-like Video Conferencing",
     description: "Real-time video conferencing platform with WebRTC technology, Socket.io for instant communication, screen sharing, and multi-participant support.",
     tech: ["Next.js", "WebRTC", "Socket.io", "Tailwind CSS"],
-    github: "https://github.com/itzRana13",
+    github: "https://github.com/itzRana13/zoom",
     demo: "https://zoom-sooty.vercel.app/",
     image: zoomVideoImg
   },
@@ -36,9 +37,17 @@ const projects = [
     title: "Grocery Store Website",
     description: "E-commerce platform with authentication, shopping cart, CRUD operations, and Redux state management for seamless user experience.",
     tech: ["React.js", "Django", "SQL", "Redux"],
-    github: "https://github.com/itzRana13",
-    demo: "#",
+    github: "https://github.com/itzRana13/Grocery-shop-project",
+    demo: "https://grocery-shop-project.vercel.app/",
     image: groceryStoreImg
+  },
+  {
+    title: "ZuTube - Video Streaming Platform",
+    description: "YouTube-like video streaming platform with video playback, search functionality, trending videos, and modern responsive UI.",
+    tech: ["React.js", "YouTube API", "Tailwind CSS", "Video Streaming"],
+    github: "https://github.com/itzRana13",
+    demo: "https://zutube.netlify.app/",
+    image: zutubeImg
   }
 ];
 
