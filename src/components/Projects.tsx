@@ -2,43 +2,52 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import ecommerceImg from "@/assets/projects/ecommerce.jpg";
-import chatAppImg from "@/assets/projects/chat-app.jpg";
-import taskManagerImg from "@/assets/projects/task-manager.jpg";
-import blogPlatformImg from "@/assets/projects/blog-platform.jpg";
+import defendiaImg from "@/assets/projects/defendia.jpg";
+import zoomVideoImg from "@/assets/projects/zoom-video.jpg";
+import chatRealtimeImg from "@/assets/projects/chat-app.jpg";
+import groceryStoreImg from "@/assets/projects/ecommerce.jpg";
+import zutubeImg from "@/assets/projects/zutube.jpg";
 
 const projects = [
   {
     title: "Defendia Password Manager",
     description: "Secure vault for credentials, passkeys, and credit cards with biometric login, masquerade emails, cross-platform sync, and real-time data breach monitoring ensuring GDPR compliance.",
     tech: ["MERN", "Electron", "Chrome Extension", "AES Encryption", "Biometric Auth"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: ecommerceImg
+    github: "https://github.com/itzRana13",
+    demo: "https://defendia.com/",
+    image: defendiaImg
+  },
+  {
+    title: "Yoom Video Conferencing",
+    description: "Real-time video conferencing platform with WebRTC technology, Socket.io for instant communication, screen sharing, and multi-participant support.",
+    tech: ["Next.js", "WebRTC", "Socket.io", "Tailwind CSS"],
+    github: "https://github.com/itzRana13/zoom",
+    demo: "https://zoom-sooty.vercel.app/",
+    image: zoomVideoImg
+  },
+  {
+    title: "Baat Cheet - Real-time Chat",
+    description: "Real-time chat application with instant messaging, online status indicators, and seamless communication powered by Socket.io and MongoDB.",
+    tech: ["React.js", "Node.js", "Socket.io", "MongoDB", "Express.js"],
+    github: "https://github.com/itzRana13",
+    demo: "https://chatapp-1-xdy1.onrender.com/",
+    image: chatRealtimeImg
   },
   {
     title: "Grocery Store Website",
     description: "E-commerce platform with authentication, shopping cart, CRUD operations, and Redux state management for seamless user experience.",
     tech: ["React.js", "Django", "SQL", "Redux"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: chatAppImg
+    github: "https://github.com/itzRana13/Grocery-shop-project",
+    demo: "https://grocery-shop-project.vercel.app/",
+    image: groceryStoreImg
   },
   {
-    title: "Bike-Buddy Platform",
-    description: "Real-time bike rental platform with secure payment gateway integration, responsive UI, and seamless booking experience.",
-    tech: ["React.js", "Django", "JavaScript", "Payment Gateway"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: taskManagerImg
-  },
-  {
-    title: "Full Stack Web Applications",
-    description: "Built multiple responsive web applications with modern frameworks, secure authentication, and optimized performance.",
-    tech: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
-    github: "https://github.com/shivam-rana",
-    demo: "#",
-    image: blogPlatformImg
+    title: "ZuTube - Video Streaming Platform",
+    description: "YouTube-like video streaming platform with video playback, search functionality, trending videos, and modern responsive UI.",
+    tech: ["React.js", "YouTube API", "Tailwind CSS", "Video Streaming"],
+    github: "https://github.com/itzRana13",
+    demo: "https://zutube.netlify.app/",
+    image: zutubeImg
   }
 ];
 
@@ -53,17 +62,17 @@ const Projects = () => {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full animate-glow-pulse" />
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-glow-lg group overflow-hidden animate-slide-up hover:scale-105"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="relative overflow-hidden aspect-video">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -80,8 +89,8 @@ const Projects = () => {
                 <CardContent className="space-y-4">
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
-                      <Badge 
-                        key={tech} 
+                      <Badge
+                        key={tech}
                         variant="secondary"
                         className="bg-secondary hover:bg-primary hover:text-primary-foreground transition-all"
                       >
@@ -89,10 +98,10 @@ const Projects = () => {
                       </Badge>
                     ))}
                   </div>
-                  
+
                   <div className="flex gap-3 pt-2">
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       size="sm"
                       className="border-border hover:bg-secondary transition-all hover:scale-105"
                       asChild
@@ -102,7 +111,7 @@ const Projects = () => {
                         Code
                       </a>
                     </Button>
-                    <Button 
+                    <Button
                       size="sm"
                       className="bg-primary hover:bg-primary/90 transition-all hover:scale-105 hover:shadow-glow"
                       asChild
