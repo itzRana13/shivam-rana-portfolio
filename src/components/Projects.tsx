@@ -40,9 +40,7 @@ const projects = [
     github: "https://github.com/itzRana13/Grocery-shop-project",
     demo: "https://grocery-shop-project.vercel.app/",
     image: groceryStoreImg
-    github: "https://github.com/itzRana13/Grocery-shop-project",
-    demo: "https://grocery-shop-project.vercel.app/",
-    image: groceryStoreImg
+
   },
   {
     title: "ZuTube - Video Streaming Platform",
@@ -51,12 +49,7 @@ const projects = [
     github: "https://github.com/itzRana13",
     demo: "https://zutube.netlify.app/",
     image: zutubeImg
-    title: "ZuTube - Video Streaming Platform",
-    description: "YouTube-like video streaming platform with video playback, search functionality, trending videos, and modern responsive UI.",
-    tech: ["React.js", "YouTube API", "Tailwind CSS", "Video Streaming"],
-    github: "https://github.com/itzRana13",
-    demo: "https://zutube.netlify.app/",
-    image: zutubeImg
+
   }
 ];
 
