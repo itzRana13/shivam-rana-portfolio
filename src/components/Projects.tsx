@@ -2,11 +2,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
 import defendiaImg from "@/assets/projects/defendia.jpg";
 import zoomVideoImg from "@/assets/projects/zoom-video.jpg";
 import chatRealtimeImg from "@/assets/projects/chat-app.jpg";
 import groceryStoreImg from "@/assets/projects/ecommerce.jpg";
 import zutubeImg from "@/assets/projects/zutube.jpg";
+import blogPlatformImg from "@/assets/projects/blog-platform.jpg";
+import taskManagerImg from "@/assets/projects/task-manager.jpg";
+import chatAppImg from "@/assets/projects/chat-realtime.jpg";
 
 const projects = [
   {
@@ -18,11 +22,11 @@ const projects = [
     image: defendiaImg
   },
   {
-    title: "Yoom Video Conferencing",
-    description: "Real-time video conferencing platform with WebRTC technology, Socket.io for instant communication, screen sharing, and multi-participant support.",
-    tech: ["Next.js", "WebRTC", "Socket.io", "Tailwind CSS"],
+    title: "Yoom - Video Calling App",
+    description: "Modern video calling application with real-time video calls, meeting scheduling, user authentication, personal meeting rooms, and responsive design for all devices.",
+    tech: ["Next.js 14", "React 18", "TypeScript", "Clerk Auth", "Stream.io Video SDK", "Tailwind CSS", "Radix UI"],
     github: "https://github.com/itzRana13/zoom",
-    demo: "https://zoom-kappa-ten.vercel.app/",
+    demo: "https://zoom-p1x6ah70e-itzrana13s-projects.vercel.app",
     image: zoomVideoImg
   },
   {
@@ -40,7 +44,6 @@ const projects = [
     github: "https://github.com/itzRana13/Grocery-shop-project",
     demo: "https://grocery-shop-project.vercel.app/",
     image: groceryStoreImg
-
   },
   {
     title: "ZuTube - Video Streaming Platform",
@@ -49,11 +52,80 @@ const projects = [
     github: "https://github.com/itzRana13",
     demo: "https://zutube.netlify.app/",
     image: zutubeImg
+  },
 
+  {
+    title: "Task Manager Pro",
+    description: "Advanced task management application with drag-and-drop functionality, team collaboration, deadline tracking, and project analytics.",
+    tech: ["React.js", "TypeScript", "DnD Kit", "Chart.js", "Local Storage"],
+    github: "https://github.com/itzRana13/task-manager",
+    demo: "https://task-manager-pro.vercel.app/",
+    image: taskManagerImg
+  },
+
+  {
+    title: "Fuel Price Visualization",
+    description: "Interactive data visualization application for tracking and analyzing fuel prices with modern UI and real-time data updates.",
+    tech: ["TypeScript", "Data Visualization", "React", "Chart.js", "API Integration"],
+    github: "https://github.com/itzRana13/fuel-price-visualization",
+    demo: "https://fuel-price-visualization.vercel.app",
+    image: taskManagerImg
+  },
+  {
+    title: "iFlex Web Application",
+    description: "Modern web application with responsive design, user authentication, and interactive features built with JavaScript and modern web technologies.",
+    tech: ["JavaScript", "HTML5", "CSS3", "Responsive Design", "Web APIs"],
+    github: "https://github.com/itzRana13/iflex",
+    demo: "https://iflex.vercel.app",
+    image: defendiaImg
+  },
+  {
+    title: "Compass Real Estate",
+    description: "Real estate business website where users can find and explore the best villas, flats, and apartments. Features property listings, search functionality, and modern UI for property discovery.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Real Estate", "Property Listings"],
+    github: "https://github.com/itzRana13/compass",
+    demo: "https://compass-psi.vercel.app",
+    image: chatRealtimeImg
+  },
+  {
+    title: "Flickr Photo Search",
+    description: "Photo search application using Flickr API with advanced search functionality, image galleries, and modern responsive interface.",
+    tech: ["JavaScript", "Flickr API", "HTML5", "CSS3", "Responsive Design"],
+    github: "https://github.com/itzRana13/flickr-photo-search",
+    demo: "https://flickr-photo-search.vercel.app",
+    image: zutubeImg
+  },
+  {
+    title: "Interactive Map Application",
+    description: "Interactive mapping application with location services, custom markers, and real-time data visualization for location-based services.",
+    tech: ["JavaScript", "Map APIs", "HTML5", "CSS3", "Geolocation"],
+    github: "https://github.com/itzRana13/map-app",
+    demo: "https://map-app-brown-one.vercel.app",
+    image: blogPlatformImg
+  },
+  {
+    title: "Kanban Board Manager",
+    description: "Project management tool with drag-and-drop functionality, task organization, and team collaboration features built with TypeScript.",
+    tech: ["TypeScript", "React", "Drag & Drop", "Local Storage", "Task Management"],
+    github: "https://github.com/itzRana13/kanban-",
+    demo: "https://kanban-board-demo.vercel.app",
+    image: taskManagerImg
+  },
+  {
+    title: "Portfolio Website",
+    description: "Modern, responsive portfolio website showcasing projects and skills with smooth animations, dark/light theme, and optimized performance.",
+    tech: ["TypeScript", "React", "Tailwind CSS", "Vite", "Responsive Design"],
+    github: "https://github.com/itzRana13/shivam-rana-portfolio",
+    demo: "https://shivam-rana-portfolio-itzrana13s-projects.vercel.app/",
+    image: chatAppImg
   }
 ];
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  const initialProjectsCount = 4;
+  const displayedProjects = showAll ? projects : projects.slice(0, initialProjectsCount);
+
   return (
     <section id="projects" className="py-24 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -66,7 +138,7 @@ const Projects = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((project, index) => (
+            {displayedProjects.map((project, index) => (
               <Card
                 key={index}
                 className="bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-glow-lg group overflow-hidden animate-slide-up hover:scale-105"
@@ -128,6 +200,19 @@ const Projects = () => {
               </Card>
             ))}
           </div>
+
+          {projects.length > initialProjectsCount && (
+            <div className="text-center">
+              <Button
+                onClick={() => setShowAll(!showAll)}
+                variant="outline"
+                size="lg"
+                className="border-border hover:bg-secondary transition-all hover:scale-105 hover:shadow-glow-lg px-8 py-3"
+              >
+                {showAll ? "Show Less" : "View More "}
+              </Button>
+            </div>
+          )}
         </div>
       </div>
     </section>
