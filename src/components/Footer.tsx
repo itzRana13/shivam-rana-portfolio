@@ -10,7 +10,7 @@ const Footer = () => {
               Shivam Rana
             </p>
             <p className="text-sm text-muted-foreground mt-1">
-              MERN Stack Developer
+              Software Engineer | Noida, India
             </p>
           </div>
 
