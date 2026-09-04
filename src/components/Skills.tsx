@@ -1,43 +1,10 @@
-import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { 
-  SiReact, 
-  SiJavascript, 
-  SiTypescript, 
-  SiHtml5, 
-  SiCss3, 
-  SiTailwindcss, 
-  SiRedux, 
-  SiNextdotjs,
-  SiNodedotjs,
-  SiExpress,
-  SiGraphql,
-  SiMongodb,
-  SiPostgresql,
-  SiRedis,
-  SiGit,
-  SiGithub,
-  SiDocker,
-  SiAmazon,
-  SiPostman,
-  SiNpm,
-  SiYarn,
-  SiPython,
-  SiFastapi,
-  SiElectron,
-  SiMysql,
-  SiGradle,
-  SiMaven,
-  SiSwagger,
-  SiIntellijidea,
-  SiSpringboot
-} from "react-icons/si";
-import { Code, Zap, Brain } from "lucide-react";
+import { Code, Zap, Brain, Database, Cloud, Wrench } from "lucide-react";
 import { IconType } from "react-icons";
 
 interface Skill {
   name: string;
-  icon: IconType | typeof Code;
+  icon: any;
   color: string;
 }
 
@@ -50,68 +17,68 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
     skills: [
-      { name: "Java", icon: SiSpringboot, color: "#007396" },
-      { name: "Python", icon: SiPython, color: "#3776AB" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "SQL", icon: Code, color: "#336791" }
+      { name: "Java", icon: Code, color: "#007396" },
+      { name: "Python", icon: Code, color: "#3776AB" },
+      { name: "JavaScript", icon: Code, color: "#F7DF1E" },
+      { name: "TypeScript", icon: Code, color: "#3178C6" },
+      { name: "SQL", icon: Database, color: "#336791" }
     ]
   },
   {
     title: "Backend Development",
     skills: [
-      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
-      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
-      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "Express.js", icon: SiExpress, color: "#000000" },
+      { name: "Spring Boot", icon: Wrench, color: "#6DB33F" },
+      { name: "FastAPI", icon: Wrench, color: "#009688" },
+      { name: "Node.js", icon: Code, color: "#339933" },
+      { name: "Express.js", icon: Code, color: "#000000" },
       { name: "REST APIs", icon: Zap, color: "#FF6B6B" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E10098" }
+      { name: "GraphQL", icon: Zap, color: "#E10098" }
     ]
   },
   {
     title: "Frontend Development",
     skills: [
-      { name: "React.js", icon: SiReact, color: "#61DAFB" },
-      { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Redux", icon: SiRedux, color: "#764ABC" },
-      { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-      { name: "CSS3", icon: SiCss3, color: "#1572B6" },
-      { name: "Electron.js", icon: SiElectron, color: "#47848F" }
+      { name: "React.js", icon: Code, color: "#61DAFB" },
+      { name: "Next.js", icon: Code, color: "#000000" },
+      { name: "TypeScript", icon: Code, color: "#3178C6" },
+      { name: "Tailwind CSS", icon: Wrench, color: "#06B6D4" },
+      { name: "Redux", icon: Code, color: "#764ABC" },
+      { name: "HTML5", icon: Code, color: "#E34F26" },
+      { name: "CSS3", icon: Code, color: "#1572B6" },
+      { name: "Electron.js", icon: Wrench, color: "#47848F" }
     ]
   },
   {
     title: "Databases",
     skills: [
-      { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-      { name: "MySQL", icon: SiMysql, color: "#00758F" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-      { name: "Redis", icon: SiRedis, color: "#DC382D" },
-      { name: "Flyway", icon: Code, color: "#CC0200" }
+      { name: "PostgreSQL", icon: Database, color: "#4169E1" },
+      { name: "MySQL", icon: Database, color: "#00758F" },
+      { name: "MongoDB", icon: Database, color: "#47A248" },
+      { name: "Redis", icon: Database, color: "#DC382D" },
+      { name: "Flyway", icon: Database, color: "#CC0200" }
     ]
   },
   {
     title: "Cloud & DevOps",
     skills: [
-      { name: "AWS", icon: SiAmazon, color: "#FF9900" },
-      { name: "Docker", icon: SiDocker, color: "#2496ED" },
-      { name: "GitHub Actions", icon: SiGithub, color: "#181717" },
+      { name: "AWS", icon: Cloud, color: "#FF9900" },
+      { name: "Docker", icon: Cloud, color: "#2496ED" },
+      { name: "GitHub Actions", icon: Cloud, color: "#181717" },
       { name: "CI/CD", icon: Zap, color: "#FF6B6B" },
-      { name: "Git", icon: SiGit, color: "#F05032" }
+      { name: "Git", icon: Code, color: "#F05032" }
     ]
   },
   {
     title: "Tools & Build Systems",
     skills: [
-      { name: "Maven", icon: SiMaven, color: "#C71C22" },
-      { name: "Gradle", icon: SiGradle, color: "#02303A" },
-      { name: "Swagger", icon: SiSwagger, color: "#85EA2D" },
-      { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-      { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000" },
+      { name: "Maven", icon: Wrench, color: "#C71C22" },
+      { name: "Gradle", icon: Wrench, color: "#02303A" },
+      { name: "Swagger", icon: Wrench, color: "#85EA2D" },
+      { name: "Postman", icon: Wrench, color: "#FF6C37" },
+      { name: "IntelliJ IDEA", icon: Code, color: "#000000" },
       { name: "VS Code", icon: Code, color: "#007ACC" },
-      { name: "npm", icon: SiNpm, color: "#CB3837" },
-      { name: "Yarn", icon: SiYarn, color: "#2C8EBB" }
+      { name: "npm", icon: Code, color: "#CB3837" },
+      { name: "Yarn", icon: Code, color: "#2C8EBB" }
     ]
   },
   {
@@ -120,7 +87,7 @@ const skillCategories: SkillCategory[] = [
       { name: "GitHub Copilot", icon: Brain, color: "#10A37F" },
       { name: "OpenAI API", icon: Brain, color: "#412991" },
       { name: "LangGraph", icon: Brain, color: "#00D9FF" },
-      { name: "FastAPI ML", icon: SiFastapi, color: "#009688" }
+      { name: "FastAPI ML", icon: Brain, color: "#009688" }
     ]
   },
   {
@@ -128,9 +95,9 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "JWT", icon: Code, color: "#000000" },
       { name: "AES Encryption", icon: Code, color: "#FF6B6B" },
-      { name: "Spring Security", icon: SiSpringboot, color: "#6DB33F" },
+      { name: "Spring Security", icon: Wrench, color: "#6DB33F" },
       { name: "GDPR Compliance", icon: Code, color: "#1E90FF" },
-      { name: "Microservices", icon: Code, color: "#FF6B6B" },
+      { name: "Microservices", icon: Wrench, color: "#FF6B6B" },
       { name: "OOP", icon: Code, color: "#007ACC" }
     ]
   }
