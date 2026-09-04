@@ -4,41 +4,52 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Junior Developer",
-    company: "Koders, Dehradun",
-    period: "May 2024 - Present",
-    description: "Building full-stack web and desktop applications using modern technologies with focus on security and performance.",
+    title: "Software Engineer",
+    company: "IndusEuro Consulting Services GmbH",
+    period: "Feb 2026 - Present",
+    description: "Developing and optimizing REST APIs and backend microservices using Java and Spring Boot with focus on improving application performance and scalability.",
     achievements: [
-      "Built full-stack web and desktop apps using React.js, Next.js, Node.js, Express.js, Django, Electron.js",
-      "Developed Defendia Password Manager with AES-encrypted vault, biometric login, masquerade emails, and cross-platform sync",
-      "Implemented real-time data breach monitoring and secure API integrations",
-      "Collaborated with teams ensuring GDPR compliance and high security standards"
+      "Developed and optimized 15+ REST APIs and backend microservices using Java and Spring Boot",
+      "Collaborated with a cross-functional Agile team of 6+ engineers, participating in sprint planning, code reviews, and debugging",
+      "Enhanced SQL queries and database models, reducing average API response time by approximately 30%",
+      "Automated deployments using Docker, GitHub Actions, and AWS"
     ],
-    tech: ["React.js", "Next.js", "Node.js", "Express.js", "Django", "Electron.js", "AES Encryption"]
+    tech: ["Java", "Spring Boot", "REST APIs", "PostgreSQL", "Docker", "AWS", "GitHub Actions"]
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Koders, Dehradun",
+    period: "May 2024 - Feb 2026",
+    description: "Developed production-ready web and desktop applications using modern frameworks with focus on performance optimization and security.",
+    achievements: [
+      "Developed 7+ production-ready web and desktop applications using React, Next.js, Node.js, Electron.js, and TypeScript",
+      "Built Defendia Password Manager with AES-256 encryption, biometric authentication, secure autofill, and breach monitoring",
+      "Streamlined Webpack configuration, reducing production bundle size by approximately 25%",
+      "Collaborated with backend engineers to integrate 8+ third-party APIs"
+    ],
+    tech: ["React.js", "Next.js", "Node.js", "Electron.js", "TypeScript", "AES-256", "REST APIs"]
   },
   {
     title: "Frontend Developer",
     company: "Iflex Technology Pvt. Ltd., Noida",
     period: "Dec 2023 - Apr 2024",
-    description: "Developed responsive React.js applications with focus on state management and secure API integrations.",
+    description: "Designed responsive React.js applications and integrated REST APIs with JWT authentication.",
     achievements: [
-      "Developed responsive React.js apps with Redux and Tailwind CSS",
-      "Integrated secure REST APIs and authentication systems",
-      "Applied AI-assisted debugging and automated testing"
+      "Designed responsive React.js applications and integrated REST APIs with JWT authentication",
+      "Leveraged GitHub Copilot, OpenAI APIs, and Jest testing to improve productivity and application stability"
     ],
-    tech: ["React.js", "Redux", "Tailwind CSS", "REST APIs", "JWT"]
+    tech: ["React.js", "JWT", "REST APIs", "GitHub Copilot", "Jest", "OpenAI APIs"]
   },
   {
     title: "Frontend Developer",
     company: "Exaltation Technologies Pvt. Ltd.",
     period: "Jun 2023 - Oct 2023",
-    description: "Built mobile-first user interfaces and optimized deployment workflows using modern DevOps practices.",
+    description: "Built responsive React.js interfaces and improved application performance across client modules.",
     achievements: [
-      "Built mobile-first UIs with responsive design principles",
-      "Integrated dynamic APIs for real-time data updates",
-      "Optimized deployments using Git and CI/CD practices"
+      "Built responsive React.js interfaces and improved application performance across client modules",
+      "Managed Git workflows, pull requests, and production deployments"
     ],
-    tech: ["React.js", "JavaScript", "Git", "CI/CD"]
+    tech: ["React.js", "JavaScript", "Git", "CI/CD", "HTML5", "CSS3"]
   }
 ];
 
