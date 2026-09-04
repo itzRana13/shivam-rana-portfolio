@@ -4,29 +4,42 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Junior Developer",
-    company: "Koders, Dehradun",
-    period: "May 2024 - Present",
-    description: "Building full-stack web and desktop applications using modern technologies with focus on security and performance.",
+    title: "Software Engineer",
+    company: "IndusEuro Consulting Services GmbH",
+    period: "Feb 2026 - Present",
+    description: "Developing and optimizing REST APIs and backend microservices using Java and Spring Boot with focus on improving application performance and scalability.",
     achievements: [
-      "Built full-stack web and desktop apps using React.js, Next.js, Node.js, Express.js, Django, Electron.js",
-      "Developed Defendia Password Manager with AES-encrypted vault, biometric login, masquerade emails, and cross-platform sync",
-      "Implemented real-time data breach monitoring and secure API integrations",
-      "Collaborated with teams ensuring GDPR compliance and high security standards"
+      "Developed and optimized 15+ REST APIs and backend microservices using Java and Spring Boot",
+      "Improved application performance and scalability through advanced optimization techniques",
+      "Collaborated with cross-functional Agile team of 6+ engineers for sprint planning, code reviews, and debugging",
+      "Enhanced SQL queries and database models, reducing average API response time by approximately 30%",
+      "Automated deployments using Docker, GitHub Actions, and AWS"
     ],
-    tech: ["React.js", "Next.js", "Node.js", "Express.js", "Django", "Electron.js", "AES Encryption"]
+    tech: ["Java", "Spring Boot", "REST APIs", "Spring Security", "Docker", "AWS", "GitHub Actions"]
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Kriyative Technologies",
+    period: "May 2024 - Feb 2026",
+    description: "Developed full-stack web and desktop applications using modern frameworks with focus on performance optimization and cloud-native solutions.",
+    achievements: [
+      "Developed 7+ production-ready web and desktop applications using React, Next.js, Node.js, Electron.js, and TypeScript",
+      "Streamlined Webpack configuration, reducing production bundle size by approximately 25%",
+      "Built responsive React.js interfaces and integrated REST APIs with JWT authentication",
+      "Managed Git workflows, pull requests, and production deployments"
+    ],
+    tech: ["React.js", "Next.js", "Node.js", "Electron.js", "TypeScript", "Webpack", "JWT"]
   },
   {
     title: "Frontend Developer",
     company: "Iflex Technology Pvt. Ltd., Noida",
     period: "Dec 2023 - Apr 2024",
-    description: "Developed responsive React.js applications with focus on state management and secure API integrations.",
+    description: "Designed responsive React.js applications and integrated REST APIs with JWT authentication for secure user experience.",
     achievements: [
-      "Developed responsive React.js apps with Redux and Tailwind CSS",
-      "Integrated secure REST APIs and authentication systems",
-      "Applied AI-assisted debugging and automated testing"
+      "Designed responsive React.js applications and integrated REST APIs with JWT authentication",
+      "Applied AI-assisted debugging and automated testing for improved code quality"
     ],
-    tech: ["React.js", "Redux", "Tailwind CSS", "REST APIs", "JWT"]
+    tech: ["React.js", "Redux", "Tailwind CSS", "REST APIs", "JWT", "HTML5", "CSS3"]
   },
   {
     title: "Frontend Developer",
@@ -34,11 +47,11 @@ const experiences = [
     period: "Jun 2023 - Oct 2023",
     description: "Built mobile-first user interfaces and optimized deployment workflows using modern DevOps practices.",
     achievements: [
-      "Built mobile-first UIs with responsive design principles",
-      "Integrated dynamic APIs for real-time data updates",
-      "Optimized deployments using Git and CI/CD practices"
+      "Built responsive React.js interfaces and improved application performance across client modules",
+      "Managed Git workflows, pull requests, and production deployments",
+      "Implemented AI-powered features and automated testing for enhanced code quality"
     ],
-    tech: ["React.js", "JavaScript", "Git", "CI/CD"]
+    tech: ["React.js", "JavaScript", "Git", "CI/CD", "HTML5", "CSS3"]
   }
 ];
 
