@@ -12,21 +12,22 @@ const About = () => {
           
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p className="animate-in fade-in duration-1000" style={{ animationDelay: '200ms' }}>
-              I'm a skilled MERN Stack Developer with expertise in React.js, Next.js, Node.js, Express.js, MongoDB, SQL, 
-              Electron.js, and Chrome Extensions. My journey in web development has been driven by a passion for 
-              creating secure, high-performance solutions that make a real impact.
+              I'm a Software Engineer with 3+ years of experience developing enterprise applications using Java, Spring Boot, 
+              Python, FastAPI, PostgreSQL, and REST APIs. My expertise spans building scalable backend systems, AI-powered 
+              applications, and cloud-native solutions with a strong foundation in full-stack development using the MERN stack.
             </p>
             
             <p className="animate-in fade-in duration-1000" style={{ animationDelay: '400ms' }}>
-              I specialize in secure application development with experience in AES encryption, biometric authentication, 
-              and GDPR compliance. Currently working as a Junior Developer at Koders, Dehradun, where I build full-stack 
-              web and desktop applications using modern technologies.
+              Currently working at IndusEuro Consulting Services GmbH, I specialize in developing and optimizing REST APIs and 
+              microservices using Java and Spring Boot. I have a proven track record of improving application performance and 
+              scalability, reducing API response times by up to 30%, and optimizing deployment pipelines using Docker, AWS, and CI/CD.
             </p>
             
             <p className="animate-in fade-in duration-1000" style={{ animationDelay: '600ms' }}>
-              I leverage AI tools like GitHub Copilot, OpenAI, and Cursor to deliver efficient solutions. I'm committed 
-              to continuous learning, staying updated with the latest web development trends, and building applications 
-              that prioritize both security and user experience.
+              I'm passionate about building secure, high-performance solutions with expertise in AES encryption, JWT authentication, 
+              and cloud technologies. I leverage modern development practices including OOP, Data Structures, Agile methodologies, 
+              and code reviews. I stay updated with the latest technologies and use AI tools like GitHub Copilot to deliver efficient, 
+              innovative solutions that prioritize security, performance, and user experience.
             </p>
           </div>
         </div>
