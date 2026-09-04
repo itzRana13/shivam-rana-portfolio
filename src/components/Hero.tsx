@@ -47,12 +47,12 @@ const Hero = () => {
               Hi, I'm <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-gradient-3d">Shivam Rana</span>
             </h1>
             <p className="text-2xl md:text-3xl text-muted-foreground font-light animate-slide-up" style={{ animationDelay: '200ms' }}>
-              MERN Stack Developer
+              Software Engineer
             </p>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '300ms' }}>
-            Skilled in React.js, Next.js, Node.js, Express.js, MongoDB, and secure app development with 2+ years of experience
+            3+ years of experience developing enterprise applications using Java, Spring Boot, Python, FastAPI, PostgreSQL, and REST APIs. Building scalable backend systems and cloud-native solutions.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center items-center pt-4 animate-slide-up" style={{ animationDelay: '400ms' }}>
@@ -80,7 +80,7 @@ const Hero = () => {
               href="https://github.com/itzrana13"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all hover:shadow-glow hover:scale-110 animate-float-3d transform-gpu"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all hover:shadow-glow hover:scale-110 animate-[...]"
               style={{ transform: 'translateZ(20px)' }}
             >
               <Github className="h-6 w-6" />
@@ -89,14 +89,14 @@ const Hero = () => {
               href="https://linkedin.com/in/shivam-rana-itzrana13"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-card border border-border hover:border-accent hover:bg-accent hover:text-accent-foreground transition-all hover:shadow-accent hover:scale-110 animate-float-3d transform-gpu"
+              className="p-3 rounded-full bg-card border border-border hover:border-accent hover:bg-accent hover:text-accent-foreground transition-all hover:shadow-accent hover:scale-110 animate-f[...]"
               style={{ transform: 'translateZ(25px)', animationDelay: '100ms' }}
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a
               href="mailto:shivamrana342@gmail.com"
-              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all hover:shadow-glow hover:scale-110 animate-float-3d transform-gpu"
+              className="p-3 rounded-full bg-card border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all hover:shadow-glow hover:scale-110 animate-[...]"
               style={{ transform: 'translateZ(15px)', animationDelay: '200ms' }}
             >
               <Mail className="h-6 w-6" />
