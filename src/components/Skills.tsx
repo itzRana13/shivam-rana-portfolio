@@ -22,9 +22,19 @@ import {
   SiAmazon,
   SiPostman,
   SiNpm,
-  SiYarn
+  SiYarn,
+  SiJava,
+  SiSpringboot,
+  SiPython,
+  SiFastapi,
+  SiElectron,
+  SiMysql,
+  SiGradle,
+  SiMaven,
+  SiSwagger,
+  SiIntellijidea
 } from "react-icons/si";
-import { Code } from "lucide-react";
+import { Code, Zap, Brain } from "lucide-react";
 import { IconType } from "react-icons";
 
 interface Skill {
@@ -40,45 +50,90 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    title: "Languages",
+    skills: [
+      { name: "Java", icon: SiJava, color: "#007396" },
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "SQL", icon: Code, color: "#336791" }
+    ]
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" },
+      { name: "FastAPI", icon: SiFastapi, color: "#009688" },
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+      { name: "Express.js", icon: SiExpress, color: "#000000" },
+      { name: "REST APIs", icon: Zap, color: "#FF6B6B" },
+      { name: "GraphQL", icon: SiGraphql, color: "#E10098" }
+    ]
+  },
+  {
     title: "Frontend Development",
     skills: [
       { name: "React.js", icon: SiReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-      { name: "Redux", icon: SiRedux, color: "#764ABC" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Redux", icon: SiRedux, color: "#764ABC" },
       { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
       { name: "CSS3", icon: SiCss3, color: "#1572B6" },
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" }
+      { name: "Electron.js", icon: SiElectron, color: "#47848F" }
     ]
   },
   {
-    title: "Backend & Databases",
+    title: "Databases",
     skills: [
-      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "Express.js", icon: SiExpress, color: "#000000" },
-      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-      { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
-      { name: "Redis", icon: SiRedis, color: "#DC382D" }
+      { name: "MySQL", icon: SiMysql, color: "#00758F" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+      { name: "Redis", icon: SiRedis, color: "#DC382D" },
+      { name: "Flyway", icon: Code, color: "#CC0200" }
     ]
   },
   {
-    title: "DevOps & Cloud",
+    title: "Cloud & DevOps",
     skills: [
       { name: "AWS", icon: SiAmazon, color: "#FF9900" },
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
-      { name: "Git", icon: SiGit, color: "#F05032" },
-      { name: "GitHub", icon: SiGithub, color: "#181717" }
+      { name: "GitHub Actions", icon: SiGithub, color: "#181717" },
+      { name: "CI/CD", icon: Zap, color: "#FF6B6B" },
+      { name: "Git", icon: SiGit, color: "#F05032" }
     ]
   },
   {
-    title: "Tools & Specializations",
+    title: "Tools & Build Systems",
     skills: [
+      { name: "Maven", icon: SiMaven, color: "#C71C22" },
+      { name: "Gradle", icon: SiGradle, color: "#02303A" },
+      { name: "Swagger", icon: SiSwagger, color: "#85EA2D" },
       { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+      { name: "IntelliJ IDEA", icon: SiIntellijidea, color: "#000000" },
       { name: "VS Code", icon: Code, color: "#007ACC" },
       { name: "npm", icon: SiNpm, color: "#CB3837" },
       { name: "Yarn", icon: SiYarn, color: "#2C8EBB" }
+    ]
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      { name: "GitHub Copilot", icon: Brain, color: "#10A37F" },
+      { name: "OpenAI API", icon: Brain, color: "#412991" },
+      { name: "LangGraph", icon: Brain, color: "#00D9FF" },
+      { name: "FastAPI ML", icon: SiFastapi, color: "#009688" }
+    ]
+  },
+  {
+    title: "Security & Best Practices",
+    skills: [
+      { name: "JWT", icon: Code, color: "#000000" },
+      { name: "AES Encryption", icon: Code, color: "#FF6B6B" },
+      { name: "Spring Security", icon: SiSpringboot, color: "#6DB33F" },
+      { name: "GDPR Compliance", icon: Code, color: "#1E90FF" },
+      { name: "Microservices", icon: Code, color: "#FF6B6B" },
+      { name: "OOP", icon: Code, color: "#007ACC" }
     ]
   }
 ];
@@ -111,7 +166,7 @@ const Skills = () => {
                     return (
                       <div
                         key={skill.name}
-                        className="group flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all cursor-default hover:scale-110 animate-slide-up border border-border hover:border-primary/50 hover:shadow-glow"
+                        className="group flex items-center gap-2 px-4 py-2 bg-secondary/50 rounded-lg hover:bg-gradient-to-r hover:from-primary/20 hover:to-accent/20 transition-all cursor-default animate-in fade-in"
                         style={{ 
                           animationDelay: `${(index * 100) + (skillIndex * 50)}ms`
                         }}
