@@ -13,7 +13,6 @@ import {
   SiExpress,
   SiGraphql,
   SiMongodb,
-  SiMongoose,
   SiPostgresql,
   SiRedis,
   SiGit,
@@ -23,8 +22,6 @@ import {
   SiPostman,
   SiNpm,
   SiYarn,
-  SiJava,
-  SiSpringboot,
   SiPython,
   SiFastapi,
   SiElectron,
@@ -32,7 +29,8 @@ import {
   SiGradle,
   SiMaven,
   SiSwagger,
-  SiIntellijidea
+  SiIntellijidea,
+  SiSpringboot
 } from "react-icons/si";
 import { Code, Zap, Brain } from "lucide-react";
 import { IconType } from "react-icons";
@@ -52,7 +50,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
     skills: [
-      { name: "Java", icon: SiJava, color: "#007396" },
+      { name: "Java", icon: SiSpringboot, color: "#007396" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
