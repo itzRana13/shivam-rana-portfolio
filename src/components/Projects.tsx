@@ -14,20 +14,36 @@ import chatAppImg from "@/assets/projects/chat-realtime.jpg";
 
 const projects = [
   {
+    title: "Algo Trading Platform",
+    description: "Broker-integrated trading platform using Spring Boot with webhook-based signal processing, automated order execution, and multi-tenant architecture supporting Live, Shadow, and Simulation modes.",
+    tech: ["Java 17", "Spring Boot", "PostgreSQL", "Flyway", "JWT", "Risk Management"],
+    github: "https://github.com/itzRana13",
+    demo: "https://github.com/itzRana13",
+    image: defendiaImg
+  },
+  {
+    title: "AIExam — AI-powered Exam Platform",
+    description: "Multi-tenant SaaS platform with Spring Boot REST APIs for exam management, authentication, subscriptions, and question banks. AI services for automated question extraction, tagging, and generation.",
+    tech: ["Java 17", "Spring Boot", "FastAPI", "LangGraph", "OpenAI", "Python"],
+    github: "https://github.com/itzRana13",
+    demo: "https://github.com/itzRana13",
+    image: zoomVideoImg
+  },
+  {
     title: "Defendia Password Manager",
-    description: "Secure vault for credentials, passkeys, and credit cards with biometric login, masquerade emails, cross-platform sync, and real-time data breach monitoring ensuring GDPR compliance.",
-    tech: ["MERN", "Electron", "Chrome Extension", "AES Encryption", "Biometric Auth"],
+    description: "Cross-platform password manager with AES-256 encryption, biometric authentication, secure autofill, and Chrome extension support. Improved architecture and performance using OOP principles and optimized Webpack builds.",
+    tech: ["React", "Node.js", "Electron.js", "AES-256", "Chrome Extension", "Biometric Auth"],
     github: "https://github.com/itzRana13",
     demo: "https://defendia.com/",
-    image: defendiaImg
+    image: chatRealtimeImg
   },
   {
     title: "Yoom - Video Calling App",
     description: "Modern video calling application with real-time video calls, meeting scheduling, user authentication, personal meeting rooms, and responsive design for all devices.",
-    tech: ["Next.js 14", "React 18", "TypeScript", "Clerk Auth", "Stream.io Video SDK", "Tailwind CSS", "Radix UI"],
+    tech: ["Next.js 14", "React 18", "TypeScript", "Clerk Auth", "Stream.io Video SDK", "Tailwind CSS"],
     github: "https://github.com/itzRana13/zoom",
     demo: "https://zoom-p1x6ah70e-itzrana13s-projects.vercel.app",
-    image: zoomVideoImg
+    image: groceryStoreImg
   },
   {
     title: "Baat Cheet - Real-time Chat",
@@ -35,23 +51,25 @@ const projects = [
     tech: ["React.js", "Node.js", "Socket.io", "MongoDB", "Express.js"],
     github: "https://github.com/itzRana13",
     demo: "https://chatapp-1-xdy1.onrender.com/",
-    image: chatRealtimeImg
+    image: zutubeImg
   },
+
   {
     title: "Grocery Store Website",
     description: "E-commerce platform with authentication, shopping cart, CRUD operations, and Redux state management for seamless user experience.",
     tech: ["React.js", "Django", "SQL", "Redux"],
     github: "https://github.com/itzRana13/Grocery-shop-project",
     demo: "https://grocery-shop-project.vercel.app/",
-    image: groceryStoreImg
+    image: blogPlatformImg
   },
+
   {
     title: "ZuTube - Video Streaming Platform",
     description: "YouTube-like video streaming platform with video playback, search functionality, trending videos, and modern responsive UI.",
     tech: ["React.js", "YouTube API", "Tailwind CSS", "Video Streaming"],
     github: "https://github.com/itzRana13",
     demo: "https://zutube.netlify.app/",
-    image: zutubeImg
+    image: taskManagerImg
   },
 
   {
@@ -60,64 +78,16 @@ const projects = [
     tech: ["React.js", "TypeScript", "DnD Kit", "Chart.js", "Local Storage"],
     github: "https://github.com/itzRana13/task-manager",
     demo: "https://task-manager-pro.vercel.app/",
-    image: taskManagerImg
+    image: chatAppImg
   },
 
-  {
-    title: "Fuel Price Visualization",
-    description: "Interactive data visualization application for tracking and analyzing fuel prices with modern UI and real-time data updates.",
-    tech: ["TypeScript", "Data Visualization", "React", "Chart.js", "API Integration"],
-    github: "https://github.com/itzRana13/fuel-price-visualization",
-    demo: "https://fuel-price-visualization.vercel.app",
-    image: taskManagerImg
-  },
-  {
-    title: "iFlex Web Application",
-    description: "Modern web application with responsive design, user authentication, and interactive features built with JavaScript and modern web technologies.",
-    tech: ["JavaScript", "HTML5", "CSS3", "Responsive Design", "Web APIs"],
-    github: "https://github.com/itzRana13/iflex",
-    demo: "https://iflex.vercel.app",
-    image: defendiaImg
-  },
-  {
-    title: "Compass Real Estate",
-    description: "Real estate business website where users can find and explore the best villas, flats, and apartments. Features property listings, search functionality, and modern UI for property discovery.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Real Estate", "Property Listings"],
-    github: "https://github.com/itzRana13/compass",
-    demo: "https://compass-psi.vercel.app",
-    image: chatRealtimeImg
-  },
-  {
-    title: "Flickr Photo Search",
-    description: "Photo search application using Flickr API with advanced search functionality, image galleries, and modern responsive interface.",
-    tech: ["JavaScript", "Flickr API", "HTML5", "CSS3", "Responsive Design"],
-    github: "https://github.com/itzRana13/flickr-photo-search",
-    demo: "https://flickr-photo-search.vercel.app",
-    image: zutubeImg
-  },
-  {
-    title: "Interactive Map Application",
-    description: "Interactive mapping application with location services, custom markers, and real-time data visualization for location-based services.",
-    tech: ["JavaScript", "Map APIs", "HTML5", "CSS3", "Geolocation"],
-    github: "https://github.com/itzRana13/map-app",
-    demo: "https://map-app-brown-one.vercel.app",
-    image: blogPlatformImg
-  },
-  {
-    title: "Kanban Board Manager",
-    description: "Project management tool with drag-and-drop functionality, task organization, and team collaboration features built with TypeScript.",
-    tech: ["TypeScript", "React", "Drag & Drop", "Local Storage", "Task Management"],
-    github: "https://github.com/itzRana13/kanban-",
-    demo: "https://kanban-board-demo.vercel.app",
-    image: taskManagerImg
-  },
   {
     title: "Portfolio Website",
     description: "Modern, responsive portfolio website showcasing projects and skills with smooth animations, dark/light theme, and optimized performance.",
     tech: ["TypeScript", "React", "Tailwind CSS", "Vite", "Responsive Design"],
     github: "https://github.com/itzRana13/shivam-rana-portfolio",
     demo: "https://shivam-rana-portfolio-itzrana13s-projects.vercel.app/",
-    image: chatAppImg
+    image: defendiaImg
   }
 ];
 
